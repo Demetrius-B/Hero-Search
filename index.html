@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Hero Search</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
   </head>
   <body>
 
@@ -11,16 +12,18 @@
       <h1>Hero Search</h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Results</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Heroes</a></li>
         </ul>
       </nav>
     </header>
 
-    <form>
-    	<input type="text" placeholder="Search here..." required>
-  	  <button type="submit">Search</button>
-    </form>
+    <div class="search">
+      <form>
+      	<input type="text" placeholder="Search here..." required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
 
   </body>
 </html>
