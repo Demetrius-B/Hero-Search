@@ -3,7 +3,7 @@ const sass = require('gulp-ruby-sass')
 const browserSync = require('browser-sync').create()
 
 gulp.task('sass', function() {
-  return sass('./sass/*.sass')
+  return sass('./stylesheets/main.sass')
       .on('error', sass.logError)
       .pipe(gulp.dest('./css'))
       .pipe(browserSync.reload({
@@ -20,5 +20,5 @@ gulp.task('browser-sync', function() {
 })
 
 gulp.task('watch', ['browser-sync', 'sass'], function() {
-  gulp.watch('./sass/*.sass', ['sass'])
+  gulp.watch('./stylesheets/*.sass', ['sass'])
 })
