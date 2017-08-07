@@ -52,7 +52,7 @@ function comicName (data) {
     if (data.title) {
       output+= "<article>"
       output+= "<img src=" + data.thumbnail.path + "." +  data.thumbnail.extension + ">"
-      output+= "<a>" + data.title + "</a>"
+      output+= "<p>" + data.title + "</p>"
       output+= "</article>"
     }
   })
