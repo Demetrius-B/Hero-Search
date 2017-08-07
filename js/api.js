@@ -46,7 +46,7 @@ form.addEventListener("submit", (e)=> {
   })
 })
 
-function comicName (data) {
+function comicName (data) { 
   let output = "<h1>Results for " + input.value + "</h1>"
   data.forEach((data, index) => {
     if (data.title) {
